@@ -1,0 +1,41 @@
+﻿Describe the problem generics address: 
+
+Generics solve the problem of code duplication and type safety by allowing the creation of classes, 
+methods, and data structures that work with any data type, without sacrificing performance. 
+They provide a way to define algorithms and data structures that can operate on objects of various types while still ensuring compile-time type safety.
+
+How would you create a list of strings using the generic List class?
+
+List<string> stringList = new List<string>();
+
+How many generic type parameters does the Dictionary class have? The Dictionary class has two generic type parameters: one for the key and one for the value.
+
+Dictionary<TKey, TValue>
+
+
+True/False. When a generic class has multiple type parameters, they must all match.
+False. Each type parameter can represent a different type.
+
+What method is used to add items to a List object? The Add method is used to add items to a List.
+list.Add(item);
+
+
+Name two methods that cause items to be removed from a List:
+Remove(item): Removes the first occurrence of a specific object from the list.
+RemoveAt(index): Removes the element at the specified index.
+
+How do you indicate that a class has a generic type parameter? You indicate a generic type parameter by using angle brackets (<>) after the class name.
+
+public class MyClass<T> { }
+
+
+True/False. Generic classes can only have one generic type parameter. 
+False. Generic classes can have multiple type parameters.
+
+public class MyClass<T1, T2> { }
+
+True/False. 
+Generic type constraints limit what can be used for the generic type. True. Constraints restrict the types that can be used as arguments for a generic type parameter (e.g., limiting it to classes, interfaces, or specific types).
+
+True/False.
+Constraints let you use the methods of the thing you are constraining to. True. If you apply a constraint (e.g., where T : IDisposable), you can call the methods defined by that constraint (e.g., Dispose() from IDisposable) on the generic type.
